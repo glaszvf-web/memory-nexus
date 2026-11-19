@@ -1,0 +1,22 @@
+# Build
+build/
+app/build/
+.gradle/
+.kotlin/
+local.properties
+*.iml
+.idea/
+
+# Signing (NEVER commit)
+lumen-signing.properties
+*.keystore
+*.jks
+
+# Local artifacts
+out/
+shots/
+release/
+*.log
+.ai-workspace/
+.v2c/
+__pycache__/

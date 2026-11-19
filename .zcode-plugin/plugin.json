@@ -1,0 +1,35 @@
+{
+  "name": "memory-nexus",
+  "version": "0.1.1",
+  "description": "ZCode 长期记忆库管理：BM25 中英混合检索、元数据索引、巩固管线、关联图、回收站与快照。",
+  "author": {
+    "name": "ZCode"
+  },
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "long-term-memory",
+    "knowledge-management",
+    "retrieval"
+  ],
+  "description_i18n": {
+    "en": "Long-term memory management for ZCode: BM25 bilingual retrieval, metadata index, consolidation pipeline, link graph, trash and snapshots.",
+    "zh-CN": "ZCode 长期记忆库管理：BM25 中英混合检索、元数据索引、巩固管线、关联图、回收站与快照。"
+  },
+  "skills": "./skills",
+  "commands": "./commands",
+  "mcpServers": {
+    "memory-nexus": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp/memory_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUTF8": "1"
+      },
+      "timeoutMs": 120000
+    }
+  }
+}
